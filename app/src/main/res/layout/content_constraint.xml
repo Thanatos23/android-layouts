@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_16"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ConstraintActivity"
+    tools:showIn="@layout/activity_constraint">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_name"
+        android:textSize="@dimen/default_text_size"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_name"
+        android:hint="@string/hint_name"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/separator_margin"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/tv_gender"
+        android:textSize="@dimen/default_text_size"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+    <EditText
+        android:id="@+id/et_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_gender"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_gender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"/>
+
+    <TextView
+        android:id="@+id/tv_occupation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/separator_margin"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/tv_occupation"
+        android:textSize="@dimen/default_text_size"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_gender"/>
+
+    <EditText
+        android:id="@+id/et_occupation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_occupation"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_occupation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/separator_margin"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/tv_email"
+        android:textSize="@dimen/default_text_size"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_occupation"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"/>
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/separator_margin"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/tv_contact"
+        android:textSize="@dimen/default_text_size"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="@id/tv_email"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"/>
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_contact"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"/>
+
+    <TextView
+        android:id="@+id/tv_hobby"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/separator_margin"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/tv_hobby"
+        android:textSize="@dimen/default_text_size"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="@id/tv_contact"
+        app:layout_constraintTop_toBottomOf="@id/tv_contact"/>
+
+    <EditText
+        android:id="@+id/et_hobby"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_hobby"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_hobby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_64"
+        android:layout_marginEnd="@dimen/margin_64"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_submit"
+        android:onClick="formSubmitted"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/et_hobby"
+        app:layout_constraintTop_toBottomOf="@id/et_hobby"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".33" />
+
+</android.support.constraint.ConstraintLayout>

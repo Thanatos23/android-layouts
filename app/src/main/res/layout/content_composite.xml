@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="@dimen/padding_16"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".LinearActivity"
-    tools:showIn="@layout/activity_linear">
+    tools:context=".CompositeActivity"
+    tools:showIn="@layout/activity_composite">
 
     <LinearLayout
+        android:id="@+id/lin_lay_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -38,11 +38,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lin_lay_gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:layout_marginBottom="@dimen/margin_8">
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_below="@id/lin_lay_name">
 
         <TextView
             android:id="@+id/tv_gender"
@@ -65,11 +67,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lin_lay_occupation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:layout_marginBottom="@dimen/margin_8">
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_below="@id/lin_lay_gender">
 
         <TextView
             android:id="@+id/tv_occupation"
@@ -92,11 +96,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lin_lay_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:layout_marginBottom="@dimen/margin_8">
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_below="@id/lin_lay_occupation">
 
         <TextView
             android:id="@+id/tv_email"
@@ -119,11 +125,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lin_lay_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:layout_marginBottom="@dimen/margin_8">
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_below="@id/lin_lay_email">
 
         <TextView
             android:id="@+id/tv_contact"
@@ -146,11 +154,13 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/lin_lay_hobby"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:layout_marginBottom="@dimen/margin_16">
+        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_below="@id/lin_lay_contact">
 
         <TextView
             android:id="@+id/tv_hobby"
@@ -179,5 +189,6 @@
         android:layout_marginStart="@dimen/margin_64"
         android:layout_marginEnd="@dimen/margin_64"
         android:layout_gravity="center_horizontal"
-        android:text="@string/btn_submit" />
-</LinearLayout>
+        android:text="@string/btn_submit"
+        android:layout_below="@id/lin_lay_hobby" />
+</RelativeLayout>

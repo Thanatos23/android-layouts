@@ -7,4 +7,5 @@
     <dimen name="separator_margin">5dp</dimen>
 
     <dimen name="default_text_size">23sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

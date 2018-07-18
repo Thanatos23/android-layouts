@@ -19,6 +19,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LinearActivity"
+            android:label="@string/title_activity_linear"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cryptenet.thanatos.android_layouts.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RelativeActivity"
+            android:label="@string/title_activity_relative"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cryptenet.thanatos.android_layouts.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CompositeActivity"
+            android:label="@string/title_activity_composit"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cryptenet.thanatos.android_layouts.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ConstraintActivity"
+            android:label="@string/title_activity_constraint"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cryptenet.thanatos.android_layouts.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
