@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Android Layouts</string>
+
+    <string name="tv_name">Name</string>
+    <string name="tv_gender">Gender</string>
+    <string name="tv_occupation">Occupation</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_contact">Contact</string>
+    <string name="tv_hobby">Hobby</string>
+
+    <string name="hint_name">eg. Alamgir Hossain</string>
+    <string name="hint_gender">eg. Male</string>
+    <string name="hint_occupation">eg. Job holder</string>
+    <string name="hint_email">eg. alamgir@example.com</string>
+    <string name="hint_contact">eg. 8801616161616</string>
+    <string name="hint_hobby">eg. Games</string>
+
+    <string name="btn_submit">Submit</string>
+</resources>

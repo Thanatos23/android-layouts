@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_16"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/separator_margin"
+            android:text="@string/tv_name"
+            android:textSize="@dimen/default_text_size"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_name"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/separator_margin"
+            android:text="@string/tv_gender"
+            android:textSize="@dimen/default_text_size"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <EditText
+            android:id="@+id/et_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_gender"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/tv_occupation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/separator_margin"
+            android:text="@string/tv_occupation"
+            android:textSize="@dimen/default_text_size"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <EditText
+            android:id="@+id/et_occupation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_occupation"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/separator_margin"
+            android:text="@string/tv_email"
+            android:textSize="@dimen/default_text_size"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/separator_margin"
+            android:text="@string/tv_contact"
+            android:textSize="@dimen/default_text_size"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_contact"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="@dimen/margin_16">
+
+        <TextView
+            android:id="@+id/tv_hobby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/separator_margin"
+            android:text="@string/tv_hobby"
+            android:textSize="@dimen/default_text_size"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <EditText
+            android:id="@+id/et_hobby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/hint_hobby"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_64"
+        android:layout_marginEnd="@dimen/margin_64"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_submit" />
+</LinearLayout>
