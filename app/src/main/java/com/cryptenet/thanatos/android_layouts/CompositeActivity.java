@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 public class CompositeActivity extends AppCompatActivity implements View.OnClickListener{
     private Toolbar toolbar;
     private EditText etName, etGender, etOccupation, etEmail, etContact, etHobby;
@@ -23,7 +25,7 @@ public class CompositeActivity extends AppCompatActivity implements View.OnClick
         viewBinder();
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
 
     private void viewBinder() {
